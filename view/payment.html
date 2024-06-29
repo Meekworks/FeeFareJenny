@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="assets\js">
+    <link rel="stylesheet" href="assets\css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-grid.css.map">
+    <link rel="stylesheet" href="bootstrap.min.css.map">
+    <link rel="stylesheet" href="bootstrap.bundle.js">
+    <link rel="stylesheet" href="assets/css">
+    <link rel="stylesheet" href="assets/js">
+
+    <link rel="stylesheet" href="FeeFare\assets\css\bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets\css\bootstrap-grid.css">
+    <link rel="stylesheet" href="assets\css\bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets\css\bootstrap.css">
+    <link rel="stylesheet" href="invoice.html">
+
+</head>
+
+<body>
+
+    <div class="navbar" style="background-color: rgb(1, 10, 129);">
+        <ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-collapse text-white navbar-brand" href="index.html"><i class="fa fa-home">home</i></a>
+
+
+            <li class=" navbar-nav navbar-dark navbar-expand-lg" id="navbar-item">
+                <a class="navbar-collapse text-white navbar-brand" href="payment.html"><i class="fa fa-money"></i></a>
+            </li>
+
+            <li class="navbar-nav navbar-dark" id="navbar-item">
+                <a class="navbar-collapse text-white navbar-brand" href="history.html"><i class="fa fa-history"></i></a>
+            </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <main>
+        <form action="invoice.html" id="payment-form">
+            <div class="col-md-12 mt-3">
+
+
+                <div class="row mx-auto ">
+                    <div class="col-md-6 mx-auto">
+                        <h4 class="text-center">PAYMENT FORM</h4>
+                        <div class="form-group">
+                            <div class="col-md-12 mt-3">
+
+                                <label for="studentName">enetr your name</label>
+                                <input type="text" class="form-control" name="studentName" id="studentName">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="regNo">enter your regNo</label>
+                                <input type="integer" class="form-control" name="regNo" id="regNo">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="selectPrograme">SELECT YOUR PROGRAME</label>
+                                <select name="" id="">
+                                    <option value="Degree">Degree</option>
+                                    <option value="Hnd">Hnd</option>
+                                    <option value="Ond">Ond</option>
+                                    <option value="Maasters">Masters</option>
+                                    <option value="Phd">Phd</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="level">enteryour level</label>
+                                <input type="number" class="form-control" name="level" id="level">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="session">what session?</label>
+                                <input type="number" class="form-control" name="session" id="session">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="Faculty">enetr your Faculty</label>
+                                <input type="text" class="form-control" name="Faculty" id="Faculty">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="Departement">enetr your department</label>
+                                <input type="text" class="form-control" name="Departement" id="Departement">
+                            </div>
+                            
+                            <div class="col-md-12 mt-3">
+                                <label for="amount">Amount:</label>
+                                <input type="number" class="form-control" id="amount">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="payment-method">payment Method</label>
+                                <select name="payment-method" class="form-control" id="payment-method">
+
+                                    <option value="credit-card">Credit Card</option>
+                                    <option value="paypal">paypal</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 mt-4">   
+                                <label for="form-of-payment">form of payment?</label><br>
+                                <select name="form-of-payment" class="form-of-payment" id="form-of-payment">
+
+                                    <option value="full-tuition">Tuition full payment</option>
+                                    <option value="installment">Tuition installment</option>
+                                    <option value="others">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 mt-4">
+                                <label for="card-details">Please enter your card details</label><br>
+                                <input type="alphanumeric" class="card-details" name="card-details" id="card-details">
+                            </div>
+                            
+                            <div class="col-md-12 mt-4 ">
+                                <input   type="submit" value="Make payment" class="btn btn-success ml-auto float-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+    <!-- <div class="button" style="text-align: center;">
+        <ul>
+            <button type="button" class="btn bg-primary col-md-6 mt-4">
+                <a class="btn btn-brand btn-collapse text-white expand primary " href="freshersPay.html">Freshers</a>
+            </button>
+            <div>
+                <button type="button" class="btn bg-primary col-md-6 mt-4">
+                    <a class="btn btn-brand btn-collapse text-white primary" href="directEntryPay.html">Direct Entry</a>
+                </button>
+            </div>
+            <div>
+                <button class="btn bg-primary col-md-6 mt-4" type="button">
+                    <a class="btn btn-brand btn-collapse text-white" href="DegreePay.html">Degree</a>
+                </button>
+            </div>
+            <div>
+                <button class="btn bg-primary col-md-6 mt-4" type="btn">
+                    <a class="btn btn-brand btn-collapse text-white" href="HndConvPay.html">Hnd Conversion</a>
+                </button>
+            </div>
+        </ul>
+    </div> -->
+
+    <!-- <main>
+        <form action="history.html" id="payment-form">
+            <div class="col-md-12 mt-3">
+
+
+                <div class="row mx-auto ">
+                    <div class="col-md-6 mx-auto">
+                        <h4 class="text-center">Make Payment</h4>
+                        <div class="form-group">
+                            <div class="col-md-12 mt-3">
+
+                                <label for="studentName">enetr your name</label>
+                                <input type="text" class="form-control" name="studentName" id="studentName">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="regNo">enter your regNo</label>
+                                <input type="integer" class="form-control" name="regNo" id="regNo">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="level">enteryour level</label>
+                                <input type="number" class="form-control" name="level" id="level">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="session">what session?</label>
+                                <input type="number" class="form-control" name="session" id="session">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="Faculty">enetr your Faculty</label>
+                                <input type="text" class="form-control" name="Faculty" id="Faculty">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="Departement">enetr your department</label>
+                                <input type="text" class="form-control" name="Departement" id="Departement">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="amount">Amount:</label>
+                                <input type="number" class="form-control" id="amount">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <label for="payment-method">payment Method</label>
+                                <select name="payment-method" class="form-control" id="payment-method">
+
+                                    <option value="credit-card">Credit Card</option>
+                                    <option value="paypal">paypal</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 mt-4 ">
+                                <input type="submit" value="Make payment" class="btn btn-success ml-auto float-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main> -->
+
+</body>
+
+</html>

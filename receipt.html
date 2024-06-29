@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Fee Payment System</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .receipt-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .receipt-body {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .receipt-body h4 {
+            border-bottom: 1px solid #ced4da;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .receipt-info {
+            margin-bottom: 20px;
+        }
+        .print-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table td {
+            padding: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    
+     <div class="container mb-5">
+        <p class="text-center"><a class="nav-link" href="index.html">Back to Home</a></p>
+        <div class="receipt-header">
+            <h2>Payment Receipt</h2>
+        </div>
+        <div class="receipt-body">
+            <div class="receipt-info">
+                <h4 class="text-center">Transaction Details</h4>
+                <table>
+                    <tr>
+                        <td><strong>Date:</strong></td>
+                        <td>June 30, 2024</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Amount:</strong></td>
+                        <td>$500.00</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Payment Method:</strong></td>
+                        <td>Credit Card</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Receipt Number:</strong></td>
+                        <td>123456789</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="receipt-info">
+                <h4 class="text-center">Student Information</h4>
+                <table>
+                    <tr>
+                        <td><strong>Name:</strong></td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Registration Number:</strong></td>
+                        <td>ABC123</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Program:</strong></td>
+                        <td>Degree</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Level:</strong></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Session:</strong></td>
+                        <td>1st</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="print-button">
+                <button class="btn btn-primary" onclick="window.print()">Print Receipt</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jQuery3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

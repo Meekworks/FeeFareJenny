@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment history</title>
+    <link rel="stylesheet" href="assets\js">
+    <link rel="stylesheet" href="assets\css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-grid.css.map">
+    <link rel="stylesheet" href="bootstrap.min.css.map">
+    <link rel="stylesheet" href="bootstrap.bundle.js">
+    <link rel="stylesheet" href="assets/css">
+    <link rel="stylesheet" href="assets/js">
+
+    <link rel="stylesheet" href="FeeFare\assets\css\bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets\css\bootstrap-grid.css">
+    <link rel="stylesheet" href="assets\css\bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets\css\bootstrap.css">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 2em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <script>
+        const paymentHistory = [
+            {
+                Date: ('2024-05-21'),
+                amaount: ('110.000.00'),
+                method: ('credit card')
+            },
+            //add more payment history items here.
+        ];
+
+        const historyList = document.getElementById('history-list');
+
+        paymentHistory.forEach((payment) => {
+            const row = document.createElement('tr');
+            const dataCell = document.createElement('td');
+            const amaountCell = document.createElement('td');
+            const methodCell = document.createElement('td');
+
+            dateCell.textContent = payment.date;
+
+            amaountCell.textContent = payment.amaount;
+            methodCell.textContent = payment.method;
+
+            row.appendChild(dateCell);
+
+            row.appendChild(amaountCell);
+
+            row.appendChild(methodCell);
+
+            historyList.appendChild(row);
+        });
+    </script>
+     <div class="navbar" style="background-color: rgb(1, 10, 129);">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-collapse text-white navbar-brand" href="index.html"><i class="fa fa-home">home</i></a>
+       
+
+        <li class=" navbar-nav navbar-dark" id="navbar-item">
+            <a class="navbar-collapse text-white navbar-brand" href="payment.html"><i class="fa fa-money"></i></a>
+        </li>
+
+        <li class="navbar-nav navbar-dark" id="navbar-item">
+            <a class="navbar-collapse text-white navbar-brand" href="history.html"><i class="fa fa-history"></i></a>
+        </li>
+        </ul>
+        </nav>
+    </div>
+    <main>
+        <h2>Payment history</h2>
+
+        <!-- <table id="payment-history">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Method</th>
+                </tr>
+            </thead>
+            <tbody id="history-list">
+                
+            </tbody>
+
+        </table> -->
+
+        <div class="table-responsive">
+            <table class="table table-stripped table-hover"> 
+                <thead>
+
+                <tr>
+                    <td>Date</td>
+                    <td>Student No</td>
+                    <td>Name</td>
+                    <td>Description</td>
+                    <td>Session</td>
+                    <td>Amount </td>
+                    <td>Method</td>
+                </tr>
+            </thead>   
+            <tbody>
+                <tr>
+                <th>10/05/2024</th>
+                <th>2020/C128/08</th>
+                <th>Jenny</th>
+                <th>Exam Fees</th>
+                <th>1st</th>
+                <th>5800</th>
+                <th>Debit Card(Paystck)</th>
+            </tr>
+
+            <tr>
+                <th>10/05/2024</th>
+                <th>2020/C128/08</th>
+                <th>Mark</th>
+                <th>School Fees</th>
+                <th>1st</th>
+                <th>85000</th>
+                <th>Debit Card(Paystck)</th>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

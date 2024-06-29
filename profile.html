@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Fee Payment System</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #d4d4d4;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #d4d4d4;
+        }
+        .footer a:hover {
+            color: #ffffff;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .important-notice {
+            background-color: #ffc107;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fee Payment System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payments.html">Payments</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="carryover.html">Carryover Payments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+     <div class="container mt-5 mb-5">
+        <h2>Profile</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Details</h5>
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Registration Number:</strong> 12345678</p>
+                        <p><strong>Program:</strong> Degree</p>
+                        <p><strong>Level:</strong> 300</p>
+                        <p><strong>Session:</strong> 2023/2024</p>
+                        <p><strong>Faculty:</strong> Science</p>
+                        <p><strong>Department:</strong> Computer Science</p>
+                    </div>
+                </div>
+                <br>
+                <!-- <h5 class="card-title">Students</h5> -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            
+                            <th scope="col">Student No</th>
+                            <th scope="col">Name</th>
+                            
+                            <th scope="col">Department</th>
+           
+                            <th scope="col">View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                            <td>2020/C128/08</td>
+                            <td>Jenny</td>
+            
+                            <td>1st</td>
+                           
+                            <td><a class="btn btn-success" href="receipt.html">View</a></td>
+                        </tr>
+                        <tr>
+                            
+                            <td>2020/C128/08</td>
+                            <td>Mark</td>
+                            <td>1st</td>
+                            <td><a class="btn btn-success" href="receipt.html">View</a></td>
+                        </tr>
+                        <tr>
+                            
+                            <td>2020/C128/08</td>
+                            <td>Mark</td>
+                           
+                            <td>1st</td>
+                            
+                            
+                            <td><a class="btn btn-success" href="receipt.html">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">New Student Record</h5>
+                        <form action="add-student.html" id="new-student-form">
+                            <div class="form-group">
+                                <label for="studentName">Enter your name</label>
+                                <input type="text" class="form-control" name="studentName" id="studentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="regNo">Enter your registration number</label>
+                                <input type="text" class="form-control" name="regNo" id="regNo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="selectProgram">Select your program</label>
+                                <select class="form-control" name="selectProgram" id="selectProgram" required>
+                                    <option value="Degree">Degree</option>
+                                    <option value="Hnd">HND</option>
+                                    <option value="Ond">OND</option>
+                                    <option value="Masters">Masters</option>
+                                    <option value="Phd">PhD</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="level">Enter your level</label>
+                                <input type="number" class="form-control" name="level" id="level" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="session">Enter the session</label>
+                                <input type="number" class="form-control" name="session" id="session" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="faculty">Enter your faculty</label>
+                                <input type="text" class="form-control" name="faculty" id="faculty" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="department">Enter your department</label>
+                                <input type="text" class="form-control" name="department" id="department" required>
+                            </div>
+                            <button type="submit" class="btn btn-success float-right">Add Student</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>&copy; 2024 Fee Payment System. All rights reserved.</span>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> |
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jQuery3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

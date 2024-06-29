@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets\js">
+    <link rel="stylesheet" href="assets\css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-grid.css.map">
+    <link rel="stylesheet" href="bootstrap.min.css.map">
+    <link rel="stylesheet" href="bootstrap.bundle.js">
+    <link rel="stylesheet" href="assets/css">
+    <link rel="stylesheet" href="assets/js">
+
+    <link rel="stylesheet" href="FeeFare\assets\css\bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets\css\bootstrap-grid.css">
+    <link rel="stylesheet" href="assets\css\bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets\css\bootstrap.css">
+    <link rel="stylesheet" href="invoice.html">
+
+    <style>
+        .invoice-container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="invoice-container">
+        <h2>Payment Receipt</h2>
+        <table>
+            <tr>
+                <th>Name of Payee:</th>
+                <td><input type="text" id="payee-name"></td>
+            </tr>
+
+            <tr>
+                <th>Reg Number:</th>
+                <td><input type="text" id="reg-number"></td>
+            </tr>
+
+            <tr>
+                <th>Programe</th>
+                <td><input type="text" id="Programe"></td>
+            </tr>
+
+            <tr>
+                <th>Department</th>
+                <td><input type="text" id="Department"></td>
+            </tr>
+
+            <tr>
+                <th>Faculty</th>
+                <td><input type="text" id="faculty"></td>
+            </tr>
+
+            <tr>
+                <td>Level</td>
+                <td><input type="text" id="level"></td>
+            </tr>
+
+            <tr>
+                <th>Year/Session</th>
+                <td><input type="text" id="year-session"></td>
+            </tr>
+
+            <tr>
+                <th>Date of Payment</th>
+                <td><input type="text" id="payment-date"></td>
+            </tr>
+
+            <tr>
+                <th>Payment for</th>
+                <td>
+                    <select name="payment-for" id="payment-for">
+                        <option value="tuition">Tuition</option>
+                        <option value="others">Others</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>
